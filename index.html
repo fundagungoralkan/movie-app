@@ -2,46 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Font Awesome-->
+    <title>MOVIEW | 2026 Light Edition</title>
     <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <!--Custom CSS-->
     <link rel="stylesheet" href="style.css" />
-    <!--Script-->
-    <script src="app.js" defer></script>
-    <title>Moview</title>
   </head>
   <body>
-    <header>
-      <h1>MOVIEW</h1>
-      <form id="form">
-        <input
-          autocomplete="off"
-          type="text"
-          class="search"
-          placeholder="Search movies"
-          id="search"
-        />
-      </form>
-    </header>
-    <main id="main"></main>
+    <div class="bg-decoration"></div>
 
-    <footer>
-      <h3>MOVIEW</h3>
-      <ul>
-        <li><a href="#">Koşullar ve Gizlilik Bildirimi</a></li>
-        <li><a href="#">Geri bildirimde bulunun</a></li>
-        <li><a href="#">Yardım</a></li>
-        <li><a href="#">Çerez Bildirimi</a></li>
-      </ul>
-      <small>© 2022 - AOT</small>
-    </footer>
+    <header>
+      <div class="header-content">
+        <h1 class="logo">MOVIEW<span>.</span></h1>
+        <form id="form">
+          <div class="search-box">
+            <input
+              type="text"
+              id="search"
+              placeholder="Search movies..."
+              autocomplete="off"
+            />
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <div class="hero-text">
+      <p class="subtitle">2026 CINEMATIC INTERFACE</p>
+      <h1 class="main-title">Discover <span>Extraordinary</span> Stories</h1>
+    </div>
+
+    <div class="slider-container" id="sliderContainer">
+      <div class="slider-track" id="main"></div>
+    </div>
+
+    <button class="close-btn" id="closeBtn">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="3"
+      >
+        <path d="M18 6L6 18M6 6L18 18" />
+      </svg>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
